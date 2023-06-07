@@ -25,3 +25,13 @@ input[type=number] {
 textarea {
   resize: none !important;
 }
+
+/* --- FONT --- */
+* {
+  font-family: Garamond !important;
+}
+
+/* --- COLORE SFONDO --- */
+body {
+  background-color: var(--grigioScuro) !important;
+}

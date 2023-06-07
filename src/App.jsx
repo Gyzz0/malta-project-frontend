@@ -1,10 +1,13 @@
 import {  } from 'react'
-//import logo from './logo.svg'
-//import './App.css'
+import { Container } from 'react-bootstrap';
+import './assets/css/colors.css'
 
 export default function App() {
   return (
     <>
+    <Container fluid>
+      
+    </Container>
     </>
   );
 }
