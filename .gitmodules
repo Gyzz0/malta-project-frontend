@@ -1,0 +1,9 @@
+[submodule "src/size/mobile"]
+	path = src/size/mobile
+	url = https://github.com/Gyzz0/malta-project-frontend-mobile.git
+[submodule "src/size/tablet"]
+	path = src/size/tablet
+	url = https://github.com/Gyzz0/malta-project-frontend-tablet.git
+[submodule "src/size/website"]
+	path = src/size/website
+	url = https://github.com/Gyzz0/malta-project-frontend-website.git
