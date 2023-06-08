@@ -17,7 +17,13 @@ async function parseObject(obj){
             return response.json();
         })
         .then((data) => {
-            return data;
+            if(data!='TOKEN NON VALIDO')
+              return data;
+            else {
+              localStorage.clear();
+              alert("Sessione Scaduta!");
+              location.reload();
+            }
         })
     );
 }
@@ -28,7 +34,7 @@ export function authGet(call) {
         headers: HEADERS,
         method: "GET",
       })
-    )
+    );
 }
 
 export function authPost(call, body=undefined) {
@@ -38,7 +44,7 @@ export function authPost(call, body=undefined) {
       method: "POST",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
 
 export function authPut(call, body=undefined) {
@@ -48,7 +54,7 @@ export function authPut(call, body=undefined) {
       method: "PUT",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
 
 export function authPatch(call, body=undefined) {
@@ -58,7 +64,7 @@ export function authPatch(call, body=undefined) {
       method: "PATCH",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
 
 export function authDelete(call, body=undefined) {
@@ -68,5 +74,5 @@ export function authDelete(call, body=undefined) {
       method: "DELETE",
       body: JSON.stringify(body)
     })
-  )
+  );
 }

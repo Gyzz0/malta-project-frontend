@@ -26,7 +26,7 @@ export function notAuthGet(call) {
         headers: HEADERS,
         method: "GET",
       })
-    )
+    );
 }
 
 export function notAuthPost(call, body=undefined) {
@@ -36,7 +36,7 @@ export function notAuthPost(call, body=undefined) {
       method: "POST",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
 
 export function notAuthPut(call, body=undefined) {
@@ -46,7 +46,7 @@ export function notAuthPut(call, body=undefined) {
       method: "PUT",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
 
 export function notAuthPatch(call, body=undefined) {
@@ -56,7 +56,7 @@ export function notAuthPatch(call, body=undefined) {
       method: "PATCH",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
 
 export function notAuthDelete(call, body=undefined) {
@@ -66,5 +66,5 @@ export function notAuthDelete(call, body=undefined) {
       method: "DELETE",
       body: JSON.stringify(body)
     })
-  )
+  );
 }
