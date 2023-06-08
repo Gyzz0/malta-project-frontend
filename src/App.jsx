@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './assets/css/colors.css'
 import Mobile from './size/mobile/Mobile';
 import Tablet from './size/tablet/Tablet';
 import Website from './size/website/Website';

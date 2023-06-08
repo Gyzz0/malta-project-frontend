@@ -31,7 +31,8 @@ textarea {
   font-family: Garamond !important;
 }
 
-/* --- COLORE SFONDO --- */
+/* --- COLORE DEFAULT --- */
 body {
   background-color: var(--grigioScuro) !important;
+  color: var(--biancoSporco) !important;
 }
