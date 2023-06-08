@@ -38,3 +38,33 @@ export function notAuthPost(call, body=undefined) {
     })
   )
 }
+
+export function notAuthPut(call, body=undefined) {
+  return parseObject(
+      fetch(genereteUrl(call), {
+      headers: HEADERS,
+      method: "PUT",
+      body: JSON.stringify(body)
+    })
+  )
+}
+
+export function notAuthPatch(call, body=undefined) {
+  return parseObject(
+      fetch(genereteUrl(call), {
+      headers: HEADERS,
+      method: "PATCH",
+      body: JSON.stringify(body)
+    })
+  )
+}
+
+export function notAuthDelete(call, body=undefined) {
+  return parseObject(
+      fetch(genereteUrl(call), {
+      headers: HEADERS,
+      method: "DELETE",
+      body: JSON.stringify(body)
+    })
+  )
+}
