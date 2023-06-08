@@ -18,7 +18,7 @@
 .border-nero { border: 1px solid var(--nero) !important; }
 .stroke-nero { -webkit-text-stroke: 1px var(--nero) !important; }
 .hover-text-nero:hover { color: var(--nero) !important; }
-.hover-gb-nero:hover { background-color: var(--nero) !important; }
+.hover-bg-nero:hover { background-color: var(--nero) !important; }
 
 
 /* --- CLASSI "grigioScuro" --- */
@@ -27,7 +27,7 @@
 .border-grigioScuro { border: 1px solid var(--grigioScuro) !important; }
 .stroke-grigioScuro { -webkit-text-stroke: 1px var(--grigioScuro) !important; }
 .hover-text-grigioScuro:hover { color: var(--grigioScuro) !important; }
-.hover-gb-grigioScuro:hover { background-color: var(--grigioScuro) !important; }
+.hover-bg-grigioScuro:hover { background-color: var(--grigioScuro) !important; }
 
 /* --- CLASSI "borgogna" --- */
 .bg-borgogna { background-color: var(--borgogna) !important; }
@@ -35,7 +35,7 @@
 .border-borgogna { border: 1px solid var(--borgogna) !important; }
 .stroke-borgogna { -webkit-text-stroke: 1px var(--borgogna) !important; }
 .hover-text-borgogna:hover { color: var(--borgogna) !important; }
-.hover-gb-borgogna:hover { background-color: var(--borgogna) !important; }
+.hover-bg-borgogna:hover { background-color: var(--borgogna) !important; }
 
 /* --- CLASSI "verdeMuschio" --- */
 .bg-verdeMuschio { background-color: var(--verdeMuschio) !important; }
@@ -43,7 +43,7 @@
 .border-verdeMuschio { border: 1px solid var(--verdeMuschio) !important; }
 .stroke-verdeMuschio { -webkit-text-stroke: 1px var(--verdeMuschio) !important; }
 .hover-text-verdeMuschio:hover { color: var(--verdeMuschio) !important; }
-.hover-gb-verdeMuschio:hover { background-color: var(--verdeMuschio) !important; }
+.hover-bg-verdeMuschio:hover { background-color: var(--verdeMuschio) !important; }
 
 /* --- CLASSI "viola" --- */
 .bg-viola { background-color: var(--viola) !important; }
@@ -51,7 +51,7 @@
 .border-viola { border: 1px solid var(--viola) !important; }
 .stroke-viola { -webkit-text-stroke: 1px var(--viola) !important; }
 .hover-text-viola:hover { color: var(--viola) !important; }
-.hover-gb-viola:hover { background-color: var(--viola) !important; }
+.hover-bg-viola:hover { background-color: var(--viola) !important; }
 
 /* --- CLASSI "marroneBruciato" --- */
 .bg-marroneBruciato { background-color: var(--marroneBruciato) !important; }
@@ -59,7 +59,7 @@
 .border-marroneBruciato { border: 1px solid var(--marroneBruciato) !important; }
 .stroke-marroneBruciato { -webkit-text-stroke: 1px var(--marroneBruciato) !important; }
 .hover-text-marroneBruciato:hover { color: var(--marroneBruciato) !important; }
-.hover-gb-marroneBruciato:hover { background-color: var(--marroneBruciato) !important; }
+.hover-bg-marroneBruciato:hover { background-color: var(--marroneBruciato) !important; }
 
 /* --- CLASSI "bluNotte" --- */
 .bg-bluNotte { background-color: var(--bluNotte) !important; }
@@ -67,7 +67,7 @@
 .border-bluNotte { border: 1px solid var(--bluNotte) !important; }
 .stroke-bluNotte { -webkit-text-stroke: 1px var(--bluNotte) !important; }
 .hover-text-bluNotte:hover { color: var(--bluNotte) !important; }
-.hover-gb-bluNotte:hover { background-color: var(--bluNotte) !important; }
+.hover-bg-bluNotte:hover { background-color: var(--bluNotte) !important; }
 
 /* --- CLASSI "oroVecchio" --- */
 .bg-oroVecchio { background-color: var(--oroVecchio) !important; }
@@ -75,7 +75,7 @@
 .border-oroVecchio { border: 1px solid var(--oroVecchio) !important; }
 .stroke-oroVecchio { -webkit-text-stroke: 1px var(--oroVecchio) !important; }
 .hover-text-oroVecchio:hover { color: var(--oroVecchio) !important; }
-.hover-gb-oroVecchio:hover { background-color: var(--oroVecchio) !important; }
+.hover-bg-oroVecchio:hover { background-color: var(--oroVecchio) !important; }
 
 /* --- CLASSI "rossoSangue" --- */
 .bg-rossoSangue { background-color: var(--rossoSangue) !important; }
@@ -83,7 +83,7 @@
 .border-rossoSangue { border: 1px solid var(--rossoSangue) !important; }
 .stroke-rossoSangue { -webkit-text-stroke: 1px var(--rossoSangue) !important; }
 .hover-text-rossoSangue:hover { color: var(--rossoSangue) !important; }
-.hover-gb-rossoSangue:hover { background-color: var(--rossoSangue) !important; }
+.hover-bg-rossoSangue:hover { background-color: var(--rossoSangue) !important; }
 
 /* --- CLASSI "biancoSporco" --- */
 .bg-biancoSporco { background-color: var(--biancoSporco) !important; }
@@ -91,4 +91,4 @@
 .border-biancoSporco { border: 1px solid var(--biancoSporco) !important; }
 .stroke-biancoSporco { -webkit-text-stroke: 1px var(--biancoSporco) !important; }
 .hover-text-biancoSporco:hover { color: var(--biancoSporco) !important; }
-.hover-gb-biancoSporco:hover { background-color: var(--biancoSporco) !important; }
+.hover-bg-biancoSporco:hover { background-color: var(--biancoSporco) !important; }

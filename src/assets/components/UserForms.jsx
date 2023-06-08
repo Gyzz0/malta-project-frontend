@@ -8,13 +8,13 @@ export default function UserForms() {
 
   const defaultClass = "clickable text-center h5 py-2 rounded";
   const active = defaultClass + " bg-rossoSangue";
-  const notActive = defaultClass + " hover-gb-borgogna";
+  const notActive = defaultClass + " hover-bg-borgogna";
 
   return (
     <Container fluid>
       <Row>
         <Col
-          xl={{span:3}}
+          xl={{span:4, offset:1}}
           className={schermata == 0 ? active : notActive}
           onClick={() => {
             setSchermata(0);
@@ -23,7 +23,7 @@ export default function UserForms() {
           Gioca
         </Col>
         <Col
-          xl={{span:3, offset:1}}
+          xl={{span:4, offset:2}}
           className={schermata == 1 ? active : notActive}
           onClick={() => {
             setSchermata(1);
