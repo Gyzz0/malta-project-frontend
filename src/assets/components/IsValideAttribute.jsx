@@ -8,9 +8,9 @@ export default function IsValideAttribute(props) {
 
   
   useEffect(async () => {
-    let isValid = props.isValidUsername;
+    let isValid = props.isValid;
 
-    if (props.isValidUsername == true) {
+    if (props.isValid == true) {
       setIcona(<CheckCircleFill className="text-verdeMuschio"/>);
       setTesto(props.testi[1]);
     } else if (isValid == false) {
@@ -20,7 +20,7 @@ export default function IsValideAttribute(props) {
       setIcona(<Circle />);
       setTesto(props.testi[0]);
     }
-  }, [props.isValidUsername]);
+  }, [props.isValid]);
   
 
   return (
