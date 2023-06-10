@@ -1,10 +1,4 @@
 import { OverlayTrigger, Popover } from "react-bootstrap";
-import * as icons from "react-bootstrap-icons";
-
-const Icon = ({ iconName, ...props }) => {
-  const BootstrapIcon = icons[iconName];
-  return <BootstrapIcon {...props} />;
-};
 
 export default function IconPopover(props) {
   const popover = (
@@ -21,8 +15,8 @@ export default function IconPopover(props) {
   );
 
   return (
-    <OverlayTrigger trigger="click" placement={props.placement} overlay={popover} rootClose>
-      {props.icon}
+    <OverlayTrigger trigger={"click"} placement={props.placement} overlay={popover} rootClose>
+      <span className="clickable hover-text-oroVecchio ms-1">{props.icon}</span>
     </OverlayTrigger>
   );  
 }

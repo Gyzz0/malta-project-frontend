@@ -22,11 +22,11 @@ export default function Login(props) {
         <Form name="loginForm" onSubmit={loginSubmit}>
           <Form.Group>
             <Form.Label>Username</Form.Label>
-            <Form.Control placeholder="Username" type="text" name="username"></Form.Control>
+            <Form.Control placeholder="Username" type="text" name="username" required />
           </Form.Group>
           <Form.Group className="mt-2">
             <Form.Label>Password</Form.Label>
-            <Form.Control placeholder="Password" type="password" name="password"></Form.Control>
+            <Form.Control placeholder="Password" type="password" name="password" required />
           </Form.Group>
           <Form.Group className="mt-3">
             <Button type="submit" className="bg-nero border-rossoSangue hover-bg-borgogna w-100">Entra</Button>
