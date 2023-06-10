@@ -20,14 +20,16 @@ export default function Signup() {
     event.stopPropagation();
     const signup = {
       username: clearFormInput(signupForm, 0),
-      password: clearFormPassword(signupForm, 1),
+      email: clearFormInput(signupForm, 1),
+      password: clearFormPassword(signupForm, 2),
     };
-    const response = JSON.parse(await notAuthPost("signup", signup));
-    console.log(signup);
-    if (response) {
-      localStorage.setItem("token", response);
-      location.reload();
-    } else alert("Username o password errate!");
+    if (isValidUsername && isValidEmail) {
+      const response = JSON.parse(await notAuthPost("signup", signup));
+      if (response) {
+        alert("Registrazione avvenuta con successo!");
+        location.reload();
+      } else alert("Si è verificato un errore durante la registrazione, riprovare più tardi!");
+    }
   }
 
   return (
@@ -51,6 +53,7 @@ export default function Signup() {
             max={20}
             required
             onBlur={existUsername}
+            pattern="[a-zA-Z]+"
           />
           <InputGroup.Text>
             <IsValideAttribute
@@ -102,6 +105,7 @@ export default function Signup() {
           name="password"
           minLength={5}
           required
+          pattern="[a-zA-Z0-9]+"
         />
       </Form.Group>
       <Form.Group className="mt-3">

@@ -9,7 +9,6 @@ export default function Login(props) {
     event.stopPropagation();
     const login = {username:clearFormInput(loginForm, 0), password:clearFormPassword(loginForm, 1)};
     const response = JSON.parse(await notAuthPost("login", login));
-    console.log(login);
     if(response){
       localStorage.setItem("token",response);
       location.reload();
