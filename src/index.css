@@ -36,3 +36,16 @@ body {
   background-color: var(--grigioScuro) !important;
   color: var(--biancoSporco) !important;
 }
+
+/* --- COLORE DELLE CHECKBOX --- */
+*:checked {
+ background-color: var(--rossoSangue) !important;
+ border-color: var(--rossoSangue) !important;
+}
+
+/* --- COLORE BORDO INPUT --- */
+*:focus { 
+    border-color: var(--borgogna) !important;
+    box-shadow: 0 1px 1px var(--borgogna) inset, 0 0 8px var(--borgogna) !important;
+    outline: 0 none;
+}
