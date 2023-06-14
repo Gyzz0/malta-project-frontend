@@ -14,7 +14,11 @@ export default function Manuale(props) {
 
   useEffect(() => {
     generateCapitoli();
-  }, []);
+  }, []);  
+  
+  useEffect(() => {
+    setSelectedParagraph(0);
+  }, [selectedChapter]);
 
   return (
     <Container fluid>
@@ -24,6 +28,7 @@ export default function Manuale(props) {
             {capitoli.map((item, index) => {
               return (
                 <ListGroupItem
+                  key={item.titolo}
                   onClick={() => {
                     setSelectedChapter(index);
                   }}
@@ -34,6 +39,7 @@ export default function Manuale(props) {
                     {item.paragrafi.map((parag, pindex) => {
                       return (
                         <ListGroupItem
+                          key={parag.titolo}
                           className={
                             selectedParagraph != pindex ? notActive : active
                           }
@@ -53,7 +59,7 @@ export default function Manuale(props) {
         </Col>
         <Col>
           {capitoli[selectedChapter] != null ? (
-            <Capitolo capitolo={capitoli[selectedChapter]} />
+            <Capitolo capitolo={capitoli[selectedChapter]} paragrafo={selectedParagraph}/>
           ) : null}
         </Col>
       </Row>
