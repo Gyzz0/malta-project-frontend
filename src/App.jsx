@@ -20,7 +20,7 @@ export default function App() {
         : window.innerWidth >=  768 && window.innerWidth <  1200 
           ? <Tablet page={page} /> 
           : <Website page={page} />
-    }      
+    }
     </>
   );
 }

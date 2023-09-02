@@ -5,10 +5,12 @@ import './index.css'
 import './assets/css/colors.css';
 import './assets/css/options.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Size from './Size';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App />    
+    <Size />
   </React.StrictMode>,
   document.getElementById('root')
 )

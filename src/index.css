@@ -49,3 +49,21 @@ body {
     box-shadow: 0 1px 1px var(--borgogna) inset, 0 0 8px var(--borgogna) !important;
     outline: 0 none;
 }
+
+/* --- DISABILITA SELEZIONE TESTO --- */
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+
+
+/*TODO ELIMINARE*/
+.size {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  color: pink;
+}
