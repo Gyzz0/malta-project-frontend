@@ -1,45 +1,26 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import Mobile from './size/mobile/Mobile';
+import Tablet from './size/tablet/Tablet';
+import Website from './size/website/Website';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [page, setPage] = useState("H");
+
+  useEffect(() => {
+    if(localStorage.getItem("token")!=null){
+      setPage("L");
+    }
+  });
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <>
+    {
+      window.innerWidth <  768 
+        ? <Mobile page={page} /> 
+        : window.innerWidth >=  768 && window.innerWidth <  1200 
+          ? <Tablet page={page} /> 
+          : <Website page={page} />
+    }
+    </>
+  );
 }
-
-export default App
