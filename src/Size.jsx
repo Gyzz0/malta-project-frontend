@@ -1,13 +1,9 @@
 export default function Size() {
   return (
-    <>
-      <div className="size">
-        {window.innerWidth < 768
-          ? "M"
-          : window.innerWidth >= 768 && window.innerWidth < 1200
-          ? "T"
-          : "W"}
-      </div>
-    </>
+    <span className="size">
+      <div className="d-md-none">Mobile</div>
+      <div className="d-none d-md-block d-xl-none">Tablet</div>
+      <div className="d-none d-xl-block">Website</div>
+    </span>
   );
 }
