@@ -1,7 +1,7 @@
 import { Container, Row, Col} from "react-bootstrap";
-import NavbarLandaOffMD from "../../tablet/landa/NavbarLandaOffMD";
+import NavbarLandaOff from "../assets/components/NavbarLandaOff";
 
-export default function OffXL() {
+export default function Off() {
 
   return (
     <Container fluid>
@@ -12,7 +12,7 @@ export default function OffXL() {
         <Col xl={2}>S</Col>
         <Col xl={8}>
           <Row className="d-inline">
-            <NavbarLandaOffMD />
+            <NavbarLandaOff />
           </Row>
           <Row>
 

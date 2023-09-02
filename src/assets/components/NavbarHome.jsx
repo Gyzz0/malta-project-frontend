@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 
-export default function NavbarHomeMD(props) {
+export default function NavbarHome(props) {
   const sezioni = [
     "Manuale",
     "Regolamento",

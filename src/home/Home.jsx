@@ -1,16 +1,16 @@
 import { Container, Row } from "react-bootstrap";
-import NavbarHomeMD from "../../tablet/home/NavbarHomeMD";
 import { useState } from "react";
-import WelcomeXL from "./WelcomeXL";
-import Manuale from "../../../assets/components/Manuale";
+import WelcomeXL from "./Welcome";
+import Manuale from "../assets/components/Manuale";
+import NavbarHome from "../assets/components/NavbarHome";
 
-export default function HomeXL() {
+export default function Home() {
   const [schermata, setSchermata] = useState(2);
 
   return (
     <Container fluid>
       <Row className="d-inline">
-        <NavbarHomeMD selected={schermata} change={setSchermata}/>
+        <NavbarHome selected={schermata} change={setSchermata}/>
       </Row>
       <Row className="mt-2">
         {

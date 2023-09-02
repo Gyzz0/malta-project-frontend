@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Col } from "react-bootstrap";
-import GenericModal from "../../../assets/components/GenericModal";
-import Manuale from "../../../assets/components/Manuale";
+import GenericModal from "./GenericModal";
+import Manuale from "./Manuale";
 
-export default function NavbarLandaOffMD(props) {
+export default function NavbarLandaOff(props) {
   const [modalIndex, setModalIndex]=useState(null);
 
   const sezioni = [

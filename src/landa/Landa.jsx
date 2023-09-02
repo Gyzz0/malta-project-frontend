@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import OffXL from "./OFFXL";
-import { authPost } from "../../../assets/js/auth";
+import OffXL from "./Off";
+import { authPost } from "../assets/js/auth";
 
 
-export default function LandaXL() {
+export default function Landa() {
   const [schermata, setSchermata] = useState("OFF");
   const [idGiocatore, setIdGiocatore] = useState(null);
 

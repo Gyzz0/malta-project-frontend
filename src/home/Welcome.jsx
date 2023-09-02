@@ -1,7 +1,7 @@
 import { Col, Container, Row} from "react-bootstrap";
-import UserForms from "../../../assets/components/UserForms";
+import UserForms from "../assets/components/UserForms";
 
-export default function WelcomeXL() {
+export default function Welcome() {
 
   return (
     <Container fluid>
