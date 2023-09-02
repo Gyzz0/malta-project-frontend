@@ -56,3 +56,14 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+
+
+/*TODO ELIMINARE*/
+.size {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  color: pink;
+}
