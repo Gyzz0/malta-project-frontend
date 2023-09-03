@@ -1,8 +1,8 @@
 import { Container, Row } from "react-bootstrap";
 import { useState } from "react";
-import WelcomeXL from "./Welcome";
-import Manuale from "../assets/components/Manuale";
-import NavbarHome from "../assets/components/NavbarHome";
+import NavbarHome from "../assets/model/NavbarHome";
+import Manuale from "../assets/model/Manuale";
+import Welcome from "./Welcome";
 
 export default function Home() {
   const [schermata, setSchermata] = useState(2);
@@ -22,7 +22,7 @@ export default function Home() {
                 ? null //Discalimer
                 : schermata == 4
                   ?  null //Ringraziamenti
-                  : <WelcomeXL />
+                  : <Welcome />
         }
       </Row>
     </Container>

@@ -1,7 +1,7 @@
 import { Col, Container, ListGroup, ListGroupItem, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { notAuthPost } from "../js/not_auth";
-import Capitolo from "./Capitolo";
+import Capitolo from "../components/Capitolo";
 
 export default function Manuale(props) {
   const [capitoli, setCapitoli] = useState([]);

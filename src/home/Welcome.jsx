@@ -1,5 +1,5 @@
 import { Col, Container, Row} from "react-bootstrap";
-import UserForms from "../assets/components/UserForms";
+import UserForms from "../assets/model/UserForms";
 
 export default function Welcome() {
 

@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useState } from "react";
 import Signup from "./Signup";
 import Login from "./Login";
-import { useState } from "react";
 
 export default function UserForms() {
   const [schermata, setSchermata] = useState(0);

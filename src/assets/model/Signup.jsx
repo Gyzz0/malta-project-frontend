@@ -1,10 +1,10 @@
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { clearFormInput, clearFormPassword } from "../js/form";
 import { useState } from "react";
-import IconPopover from "./IconPopover";
 import { InfoCircle } from "react-bootstrap-icons";
 import { notAuthPost } from "../js/not_auth";
-import IsValideAttribute from "./IsValideAttribute";
+import IsValideAttribute from "../components/IsValideAttribute";
+import IconPopover from "../components/IconPopover";
 
 export default function Signup() {
   const [isValidUsername, setIsValidUsername] = useState(null);

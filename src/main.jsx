@@ -5,6 +5,7 @@ import './index.css'
 import './assets/css/colors.css';
 import './assets/css/options.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+/*TODO ELIMINARE */
 import Size from './Size';
 
 ReactDOM.render(

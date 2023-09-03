@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Col } from "react-bootstrap";
-import GenericModal from "./GenericModal";
+import GenericModal from "../components/GenericModal";
 import Manuale from "./Manuale";
 
 export default function NavbarLandaOff(props) {

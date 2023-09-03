@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Switch from "./size/Switch";
+import Home from "./home/Home";
+import Landa from "./landa/Landa";
 
 export default function App() {
   const [page, setPage] = useState("H");
@@ -10,5 +11,5 @@ export default function App() {
     }
   });
 
-  return <Switch page={page} />;
+  return <>{page != "L" ? <Home /> : <Landa />}</>;
 }

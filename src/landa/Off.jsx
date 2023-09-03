@@ -1,5 +1,5 @@
 import { Container, Row, Col} from "react-bootstrap";
-import NavbarLandaOff from "../assets/components/NavbarLandaOff";
+import NavbarLandaOff from "../assets/model/NavbarLandaOff";
 
 export default function Off() {
 
